@@ -72,3 +72,14 @@ a {
         color: $white;
     }
 }
+
+.btn-2 {
+    color: $white;
+    padding: 1% 2%;
+    border: 1px solid $white;
+    transition: 1s ease-in-out;
+    &:hover {
+        color: $colorHeadlines;
+        background-color: $white;
+    }
+}

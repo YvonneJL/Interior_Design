@@ -56,6 +56,7 @@ header {
         div {
             position: relative;
             transition: 1s ease-in-out;
+            overflow: hidden;
             div {
                 position: absolute;
                 margin: auto;
@@ -84,6 +85,9 @@ header {
             &:hover div {
                 opacity: 1;
             }
+            &:hover img {
+                transform: scale(1.5);
+            }
         }
     }
 }
@@ -92,7 +96,25 @@ header {
     background-image: url('../img/background1.png');
     @include paralaxBackground(50vh);
     background-position: bottom;
-}
+    .article-service {
+        // width: 80%;
+        margin: 5% 0 0 5%;
+        background-color: $colorBackgroundOverlay;
+        article:nth-of-type(1) {
+            @include flexColumn;
+            width: 100%;
+        }
+        article:nth-of-type(2) {
+            @include flexRow;
+            text-align: center;
+            }
+            h2, p {
+                color:  $white;
+                width: 300px;
+            }
+        }
+    }
+
 
 .blog {
     @include layout;
@@ -103,6 +125,9 @@ header {
         @include grid;
         div:nth-of-type(2) {
             grid-column-start: 2;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     }
 }
@@ -217,7 +242,7 @@ footer {
         p {
             color: $white;
             padding: 5%;
-           
+            margin: 0;
         }
     }
 }
