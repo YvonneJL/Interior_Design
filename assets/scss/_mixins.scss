@@ -1,0 +1,38 @@
+@mixin layout() {
+    padding: $padding;
+    background-color: $colorBackground;
+    
+}
+
+@mixin paralaxBackground($height) {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: $height;
+}
+
+@mixin flexColumn()  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexRow() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin grid() {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+@mixin imgSize($width, $height) {
+    width: $width;
+    height: $height;
+    object-fit: cover;
+}

@@ -1,0 +1,74 @@
+@font-face {
+    font-family: Alegreya_Regular;
+    src: url("../font/AlegreyaSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: Alegreya_Bold;
+    src: url("../font/AlegreyaSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: Nixie_One;
+    src: url("../font/NixieOne-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-family: Nixie_One;
+    font-size: 5.6rem;
+    font-weight: lighter;
+    color: $white;
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: Alegreya_Regular;
+    color: $colorHeadlines;
+    padding: 0 0 1% 0;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-family: Alegreya_Regular;
+    color: $colorHeadlines;
+    padding: 1% 0;
+}
+
+p {
+    color: $colorPTags;
+    font-size: 1.2rem;
+    margin-bottom: 5%;
+    font-family: Alegreya_Regular;
+}
+
+a {
+    font-family: Alegreya_Regular;
+    text-decoration: none;
+    color: $blue;
+    font-size: 1.4rem;
+}
+
+.btn {
+    color: $colorHeadlines;
+    padding: 1% 2%;
+    border: 1px solid $colorHeadlines;
+    transition: 1s ease-in-out;
+    &:hover {
+        background-color: $colorHeadlines;
+        color: $white;
+    }
+}
